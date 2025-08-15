@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { StackProvider, StackTheme } from "@stackframe/stack";
 import { stackServerApp } from "../stack";
-import Provider from "./provider";
+import  Provider  from "./provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       ><StackProvider app={stackServerApp}><StackTheme>
         <Provider>
           {children}
-          </Provider>
+        </Provider>
         
       </StackTheme></StackProvider></body>
     </html>
